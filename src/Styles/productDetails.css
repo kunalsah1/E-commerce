@@ -1,0 +1,65 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 54, 54, 0.7);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail {
+  background-color: white;
+  width: 60%;
+  height: 80%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  padding: 0 2rem;
+}
+
+.prod {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 25rem;
+  justify-content: space-around;
+}
+.prod p {
+  width: 20rem;
+  font-weight: bold;
+}
+.detail h1 {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 2rem;
+}
+
+@media (max-width: 1665px) {
+   .detail{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+   }
+}
+
+@media (max-width: 1000px) {
+    .detail h1{
+        top: 0;
+    }
+}
+
+@media (max-width: 875px) {
+   .detail{
+    flex-direction: column;
+   }
+   .detail h1 {
+   display: none;
+  }
+}
